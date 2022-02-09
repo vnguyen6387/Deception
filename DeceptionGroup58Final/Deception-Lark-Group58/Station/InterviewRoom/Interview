@@ -1,0 +1,73 @@
+#!/bin/bash
+clear
+CUSTOMENTERTAB='                                                                                                          ' 
+CUSTOMTITLETAB='							      	  '
+CUSTOMTAB=' 			       			      	                '
+NC='\033[m'
+Red='\033[0;31m'
+Cyan='\033[0;36m'
+Blue='\033[0;34m'
+Green='\033[0;32m'
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n${CUSTOMTAB}Who would you like to interview?
+${CUSTOMTAB}[1]Lucas Issacs
+${CUSTOMTAB}[2]Nico Hargrove
+${CUSTOMTAB}[3]Mark Willington"
+tput cup 16 73 
+read INPUT
+if [[ $INPUT -eq '1' ]];
+then
+echo -e "\n\n\n${CUSTOMTAB}You sit down with Lucas, and ask him a few questions about the case."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n${CUSTOMTAB}You ask about what he saw at the scene" 
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}He tells you that he saw a short, caucasian man run from the scene." 
+echo -e "${CUSTOMTAB}He was running with what look to be a ${Green}Baseball Bat${NC}."
+echo -e "${CUSTOMTAB}He wasn't sure of the color of the ${Green}Baseball Bat${NC}."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You thanked him for his time.\n\n\n\n\n"
+
+elif [[ $INPUT -eq '2' ]];
+then
+echo -e "\n\n\n${CUSTOMTAB}You sit down with Nico, and ask him a few questions about the case."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n${CUSTOMTAB}You ask about what it was like working with Sami." 
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}He tells you that she was a very timid person, never got into any trouble." 
+echo -e "${CUSTOMTAB}He doesn't believe that she was the person who killed the victim."
+echo -e "${CUSTOMTAB}He did mention however that she was visibly upset after she found out about the affair and
+${CUSTOMTAB}started hitting boxes with her fist in the backroom."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}He tells you that there should be a Records file that shows who bought what on that day."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You thanked him for his time.\n\n\n\n\n"
+
+elif [[ $INPUT -eq '3' ]];
+then
+echo -e "\n\n\n${CUSTOMTAB}You sit down with Mark, and ask him a few questions about the case."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n${CUSTOMTAB}You ask about what he saw." 
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}He tells you that one of his customers had a ${Green}Baseball Bat${NC} with him." 
+echo -e "${CUSTOMTAB}That same man bought the ${Green}Baseball Bat${NC} from the store across from him."
+echo -e "${CUSTOMTAB}You ask what the suspect looked like, but Mark couldn't remember."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You thanked him for his time.\n\n\n\n\n"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${Cyan}${CUSTOMTAB}\"I do want to add, there was this customer I had also right behind him. He was short,
+${CUSTOMTAB}and had a very scary demeanor. Even after all these years, I still remember how scary
+${CUSTOMTAB}his presence was. I think he followed the guy with that bat after he got his order.\"${NC}\n\n\n\n\n\n"
+
+else
+echo -e "\n${CUSTOMTAB}You were undecisive on who to talk to\n\n\n\n\n\n\n"
+fi

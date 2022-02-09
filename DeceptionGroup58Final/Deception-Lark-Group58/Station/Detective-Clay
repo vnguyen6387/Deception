@@ -1,0 +1,98 @@
+#!/bin/bash
+clear
+CUSTOMENTERTAB='                                                                                                          ' 
+CUSTOMTITLETAB='							      	  '
+CUSTOMTAB=' 			       			      	                '
+NC='\033[m'
+Red='\033[0;31m'
+Cyan='\033[0;36m'
+Blue='\033[0;34m'
+echo -e "\n\n\n${CUSTOMTAB}You walk up to Clay's Desk. He seems like he's in a bad mood."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}He looks up and mutters\n\n\n${Cyan}${CUSTOMTAB}\"What do you want kid?\"${NC}\n\n\n${CUSTOMTAB}[1]How can I move quicker to a location?\n${CUSTOMTAB}[2]Apolgize for not getting him coffee\n${CUSTOMTAB}[3]Antagonize\n${CUSTOMTAB}[4]Complement\n${CUSTOMTAB}[5]Leave"
+tput cup 20 73 
+read INPUT
+if [[ $INPUT -eq '1' ]];
+then
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"Of course you ask that you slow ass. If you want to move quicker, you can type in \"cd\" then"
+echo -e "${CUSTOMTAB}the start of a location or action, then press [TAB]. It will autocomplete commands," 
+echo -e "${CUSTOMTAB}filenames, or foldernames. Maybe try that next time you see me so I don't have to" 
+echo -e "${CUSTOMTAB}wait to hear what ever the hell you gotta tell me. Now leave me alone.\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You leave his desk, wishing you got that coffee for him.\n\n\n\n\n"
+
+
+elif [[ $INPUT -eq '2' ]];
+then
+echo -e "\n\n\n${CUSTOMTAB}You apolgize to him, offering to take him out for lunch."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"You know how to get on my good side kid.\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You leave his desk, hoping he doesn't order too much.\n\n\n\n\n"
+
+
+elif [[ $INPUT -eq '3' ]];
+then
+echo -e "\n\n\n${CUSTOMTAB}You mentioned how he looked dead."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"You better leave before I choke you out.\"${NC}\n${CUSTOMTAB}[1]Antagonize\n${CUSTOMTAB}[2]Defuse"
+tput cup 34 73
+read INPUT
+case $INPUT in 
+1)
+echo -e "\n\n${CUSTOMTAB}You asked how he could reach your neck."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}He stands up quickly and you flinch."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n${Cyan}${CUSTOMTAB}\"Have you lost your mind boy? Get the hell out of here!\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You leave his desk, feeling his eyes marking you with death behind you.\n\n\n\n\n";;
+2)
+echo -e "\n\n${CUSTOMTAB}You tell him you were joking."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"It's good to see you loosen up kid. You use to be so serious.\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}You walked away, relieved that the situation didn't escalate\n\n\n\n\n";;
+*)
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"Got nothing to say now huh? Get out of here.\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You walked away, frustrated you couldn't think of anything to say.\n\n\n\n\n"
+esac
+
+
+elif [[ $INPUT -eq '4' ]];
+then
+echo -e "\n\n\n${CUSTOMTAB}You complemented on how he's not as grumpy today without his coffee"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"I'm trying my best today.\"${NC}\n${CUSTOMTAB}He grins and goes back to watching cat videos on his computer."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You leave his desk, surprised he reacted that way.\n\n\n"
+
+
+elif [[ $INPUT -eq '5' ]];
+then
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"If you need anything let me know, or you can talk to Detective Fredrick\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You leave his desk.\n\n\n"
+
+else
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"If you don't have anything to say, leave me alone, or you can talk to Detective Fredrick\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You walk away from his desk, wondering if you need to get checked up for a concussion.\n\n\n"
+fi
+

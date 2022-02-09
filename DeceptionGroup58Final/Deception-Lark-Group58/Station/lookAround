@@ -1,0 +1,29 @@
+#!/bin/bash
+clear
+CUSTOMENTERTAB='                                                                                                          ' 
+CUSTOMTITLETAB='							      	  '
+CUSTOMTAB=' 			       			      	                '  
+NC='\033[m'
+Red='\033[0;31m'
+Cyan='\033[0;36m'
+Blue='\033[0;34m'
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n${CUSTOMTAB}You smell the strong overbearing smell of coffee."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}Looking around, you see a ${Blue}InterviewRoom${NC}, ${Blue}InterrogationRoom${NC}, the ${Blue}ReceptionDesk${NC},"
+echo -e "${CUSTOMTAB}and the old ${Blue}Computer${NC} your boss was telling you about."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You notice a sticky note on your desk. You pick it up and read it"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n\n\n\n\n\n\n\n\n${CUSTOMTAB}The ${Blue}InterviewRoom${NC} is used to gathering infomation from suspects and witness.\n${CUSTOMTAB}You can only talk to suspects and listen to what they say.\n"
+echo -e "${CUSTOMTAB}The ${Blue}InterrogationRoom${NC} is used to interogate suspects and witness, \n${CUSTOMTAB}you can either be passive or aggressive.\n${CUSTOMTAB}Some tactics may or may not work with certain people.\n"
+echo -e "${CUSTOMTAB}The ${Blue}Computer${NC} is used to read infomation from suspects and witnesses.\n"
+echo -e "${CUSTOMTAB}Use \". Person-Name/lookAround\" to talk to a person or look around.\n"
+echo -e "${CUSTOMTAB}Use the command \". FinalSuspect\" when you're ready to solve the case."
+echo -e "\n${CUSTOMTAB}Use \"ls\" to look at your options again.\n"
+echo -e "${CUSTOMTAB}If you want to go back to the main station, use the command \"cd ..\".\n${CUSTOMTAB}If you want to go back to the previous location, use the command \"cd -\"
+${CUSTOMTAB}You can see where you are by looking to the left of the command line."
+echo -e "\n${CUSTOMTAB}To see where you are, use the command \"pwd\"\n\n\n\n\n\n\n\n\n\n\n"
+echo -e "\n${CUSTOMTAB}Try going to the ${Blue}ReceptionDesk${NC}\n\n\n\n\n\n\n\n\n\n\n"

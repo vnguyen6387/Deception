@@ -1,0 +1,18 @@
+#!/bin/bash
+clear
+CUSTOMENTERTAB='                                                                                                          ' 
+CUSTOMTITLETAB='							      	  '
+CUSTOMTAB=' 			       			      	                '
+NC='\033[m'
+Red='\033[0;31m'
+Cyan='\033[0;36m'
+Blue='\033[0;34m'
+Green='\033[0;32m'
+echo -e "\n\n\n\n\n\n\n${CUSTOMTAB}You look at the computer, and notice the dust accumulated over the years on the screen and keyboard.
+${CUSTOMTAB}You clean up the screen and keyboard and see a sticky note on the side of the computer screen."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n\n\n${CUSTOMTAB}To read witness/suspect info, you will need to use the command \"cat (filename)\".\n" 
+echo -e "${CUSTOMTAB}To go to the specfic directory, you must use \"cd directory\". Example: cd WitnessInfo.\n"
+echo -e "${CUSTOMTAB}To go back a directory, you can use \"cd ..\". You can use it again when you are in the\n${CUSTOMTAB}${Blue}Computer${NC} directory to go back to the ${Blue}Station${NC}"
+echo -e "${CUSTOMTAB}To search for a pattern in a large file, use \"grep \"pattern\" filename\".\n${CUSTOMTAB}For example: If you are looking for an ${Green}Item${NC} in the file named records, use \"grep "${Green}\"Item Name\"${NC}" records\".\n\n\n\n\n\n\n"

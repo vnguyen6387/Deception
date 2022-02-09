@@ -1,0 +1,56 @@
+i#!/bin/bash
+clear
+CUSTOMENTERTAB='                                                                                                          ' 
+CUSTOMTITLETAB='							      	  '
+CUSTOMTAB=' 			       			      	                '
+NC='\033[m'
+Red='\033[0;31m'
+Cyan='\033[0;36m'
+Blue='\033[0;34m'
+echo -e "\n\n\n\n\n\n\n\n\n${CUSTOMTAB}You walk up to the reception desk. You see Hailey Morris shuffling through some paperwork."
+echo -e "${CUSTOMTAB}She looks up and asks\n\n\n${Cyan}${CUSTOMTAB}\"You need help with anything?\"${NC}\n${CUSTOMTAB}[1]Yes, could you show me how to work that computer?
+${CUSTOMTAB}[2]Nah, just wanted to check up on you.\n${CUSTOMTAB}[3]Antagonize\n${CUSTOMTAB}[4]Complement\n${CUSTOMTAB}[5]Leave"
+tput cup 19 73
+read INPUT
+if [[ $INPUT -eq '1' ]];
+then
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"Sorry June, I'm not quite sure how to work that old thing. I know the \n${CUSTOMTAB}computer uses the Linux program thing. Not quite sure myself.\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}She chuckles to herself."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${Cyan}${CUSTOMTAB}\"You can try talking to${NC} ${Blue}Amelia${NC}${Cyan} though! She's the geeky programmer here.${NC}
+${Cyan}${CUSTOMTAB}I think I saw her just now in the ${Blue}BreakRoom${Cyan}\"${NC}\n\n\n\n\n\n\n"
+elif [[ $INPUT -eq '2' ]];
+then
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"I'm doing good thank you.\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}She seems busy with her work. You leave the desk bummed that you couldn't talk to her more.\n\n\n\n\n\n\n"
+elif [[ $INPUT -eq '3' ]];
+then
+echo -e "\n\n\n${CUSTOMTAB}You commented on how sloppy her handwriting was."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"Maybe you have a problem with reading, my handwriting is perfectly fine.\"${NC}"
+echo -e "${CUSTOMTAB}She covers up her papers with haste."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n\n${CUSTOMTAB}You leave the desk, wondering why you said that.\n\n\n"
+elif [[ $INPUT -eq '4' ]];
+then
+echo -e "\n\n\n${CUSTOMTAB}You complement on her outfit."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"I appreciate the complement June! You look great today as well!\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n\n${CUSTOMTAB}She seems happy with what you told her. You walk away feeling warm inside from her complement.\n\n\n\n\n\n\n"
+elif [[ $INPUT -eq '5' ]];
+then
+echo -e "\n\n\n${CUSTOMTAB}You walk away from the reception desk.\n\n\n\n\n\n\n"
+else
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"Could you stop staring at me June? You're creeping me out.\"${NC}"
+echo -e "\n${CUSTOMTAB}You walk away from the reception desk embarrassed.\n\n\n\n\n\n\n"
+fi

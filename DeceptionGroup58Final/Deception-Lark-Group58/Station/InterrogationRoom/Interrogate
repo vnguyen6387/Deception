@@ -1,0 +1,203 @@
+#!/bin/bash
+clear
+CUSTOMENTERTAB='                                                                                                          ' 
+CUSTOMTITLETAB='							      	  '
+CUSTOMTAB=' 		       			      	                '
+NC='\033[m'
+Red='\033[0;31m'
+Cyan='\033[0;36m'
+Blue='\033[0;34m'
+Green='\033[0;32m'
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n${CUSTOMTAB}Who would you like to interrogate?
+${CUSTOMTAB}[1]Walter Lee
+${CUSTOMTAB}[2]Luther Condray
+${CUSTOMTAB}[3]Sami Park" 
+read INPUT
+if [[ $INPUT -eq '1' ]];
+then
+echo -e "\n\n\n${CUSTOMTAB}You sit down with Walter, and ask him a few questions about the case."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+echo -e "${CUSTOMTAB}Do you want to be:\n${CUSTOMTAB}[1]Passive\n${CUSTOMTAB}[2]Aggressive\n"
+read INPUT
+if [[ $INPUT -eq '1' ]];
+then 
+echo -e "${CUSTOMTAB}You ask him about his purchase at the store."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}${Cyan}\"What did I buy at the store detective?${NC}\n${CUSTOMTAB}[1]Knife\n${CUSTOMTAB}[2]Paddle\n${CUSTOMTAB}[3]Screwdriver\n${CUSTOMTAB}[4]Baseball Bat\n${CUSTOMTAB}[5]Metal Bar"
+read INPUT
+if [[ $INPUT -eq '4' ]];
+then
+echo -e "${Cyan}${CUSTOMTAB}What color was it?${NC}\n${CUSTOMTAB}[1]Red
+${CUSTOMTAB}[2]Yellow
+${CUSTOMTAB}[3]Green
+${CUSTOMTAB}[4]Blue
+${CUSTOMTAB}[5]Orange"
+read INPUT
+if [[ $INPUT -eq '3' ]];
+then
+echo -e "\n${CUSTOMTAB}You seem to know so much about me already. I guess you missed the part that
+${CUSTOMTAB}I bought that for my kid, and some scum stole it from my garage."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n${CUSTOMTAB}You ask him if he knew who stole it."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${Cyan}${CUSTOMTAB}If I knew who stole it, I would of dealt with it myself.${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}You ask about his connection with the victim"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${Cyan}${CUSTOMTAB}\"Joesph was a car mechanic and that's all he wanted to do, simple life. He had the talent 
+${CUSTOMTAB}to do great in life, he could of been a great actor. Being an actor myself, I know he could of been great.
+${CUSTOMTAB}But being with Sami, he couldn't go anywhere, she was just weighing him down. But I know for sure, she had an affair.
+${CUSTOMTAB}I've seen him before, short man, she really downgraded. I wouldn't be surprised if he had something to do with it.
+${CUSTOMTAB}He definitely seems like the type to know how to get away with murder.${NC}\n\n\n\n\n\n\n"
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}You thanked him for his time.\n\n\n\n\n\n\n\n"
+else
+echo -e "${CUSTOMTAB}You have nothing on me, I don't need to be here"
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}Walter storms out of the room, maybe try talking to the witnesses that worked at the store.\n\n\n\n\n\n\n"
+fi
+else
+echo -e "${CUSTOMTAB}You have nothing on me, I don't need to be here"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}Walter storms out of the room, maybe try talking to the witnesses that worked at the store.\n\n\n\n\n\n\n"
+fi
+elif [[ $INPUT -eq '2' ]];
+then 
+echo -e "${CUSTOMTAB}You slam your hand on the table and demanded he to tell you what he did that day."		
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n${CUSTOMTAB}He starts cracking up."
+echo -e "\n${Cyan}${CUSTOMTAB}\"You don't look the part buddy, that won't work on me.\"${NC}\n\n\n\n\n\n"
+else
+echo -e "${CUSTOMTAB}You're not quite sure how to approach the interrogation.\n\n\n\n\n\n\n"
+fi
+
+
+elif [[ $INPUT -eq '2' ]];
+then
+echo -e "\n\n\n${CUSTOMTAB}You sit down with Luther, and ask him a few questions about the case."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+echo -e "${CUSTOMTAB}Do you want to be:\n${CUSTOMTAB}[1]Passive\n${CUSTOMTAB}[2]Aggressive\n"
+read INPUT
+
+if [[ $INPUT -eq '1' ]];
+then
+echo -e "\n${CUSTOMTAB}You ask about his connection with Joseph." 
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}He declined to answer.\n\n\n\n\n\n\n\n"
+elif [[ $INPUT -eq '2' ]];
+then
+echo -e "${CUSTOMTAB}You slam your hand on desk and demanded him to tell you what he had with the victim."
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}He's visibly startled."
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${Cyan}${CUSTOMTAB}\"Okay, okay. He was my best friend, we were childhood friends. He was born to be something better than
+${CUSTOMTAB}a car mechanic. We got into so many arguments about his job and the potential he had before he passed away. 
+${CUSTOMTAB}I know he had an affair, but he was a really great guy. He just felt lost and needed someone that could support
+${CUSTOMTAB}him and his dream. He just felt stuck between so many people telling him he can't because it's too risky. His
+${CUSTOMTAB}best friend and his significant other at the time couldn't support his dream.${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}He starts to sink in his chair."
+echo -e "${CUSTOMTAB}What do you want to do?\n${CUSTOMTAB}[1]Inspect\n${CUSTOMTAB}[2]Leave\n"
+read INPUT
+if  [[ $INPUT -eq '1' ]];
+then
+echo -e "${CUSTOMTAB}You inspect Luther, he seems genuinely conflicted on not supporting his friend."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}You thanked him for his time and let him leave.\n\n\n\n\n\n\n"
+else
+echo -e "${CUSTOMTAB}You thanked him for his time and let him leave.\n\n\n\n\n\n\n"
+fi
+else
+echo -e "${CUSTOMTAB}You didn't know how to approach the interrogation."
+fi
+
+
+elif [[ $INPUT -eq '3' ]];
+then
+echo -e "\n\n\n\n\n\n\n\n\n${CUSTOMTAB}You sit down with Sami, and ask her about why she think Joseph had an affair."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}Do you want to be:\n${CUSTOMTAB}[1]Passive\n${CUSTOMTAB}[2]Aggressive\n"
+read INPUT
+if [[ $INPUT -eq '1' ]];
+then 
+echo -e "${CUSTOMTAB}You ask her about why she think he had an affair."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}${Cyan}\"I'm not sure, I loved him. The only thing that I didn't agree with him about was when he
+${CUSTOMTAB}wanted to be a actor. I honestly didn't think he could be an actor due to his inexperience, but I
+${CUSTOMTAB}should of supported him. I think he wanted to find a women that really supported him. I wish I could
+${CUSTOMTAB}of supported him, but we couldn't afford a risk like that. I'm a cashier, he was a car mechanic. We
+${CUSTOMTAB}just didn't have the money to support his dream.${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}She starts weeping."
+echo -e "${CUSTOMTAB}[1]Ask her another question\n${CUSTOMTAB}[2]Inspect\n${CUSTOMTAB}[3]Leave"
+read INPUT
+if [[ $INPUT -eq '1' ]];
+then
+echo -e "\n${CUSTOMTAB}You ask her about her involvement with the murder."
+echo -e "\n${CUSTOMTAB}As expected you thought, she declined any involvement with the murder."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n${CUSTOMTAB}You ask her if she wanted to leave, she agreed and left\n\n\n\n\n\n"
+elif [[ $INPUT -eq '2' ]];
+then
+echo -e "${CUSTOMTAB}You inspect her crying. It seems to be disingenuous."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}[1]Passive\n${CUSTOMTAB}[2]Aggressive\n"
+read INPUT
+if [[ $INPUT -eq '1' ]];
+then 
+echo -e "${CUSTOMTAB}You ask if she wanted to leave."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}She agreed and left then room.\n\n\n\n\n\n\n"
+elif [[ $INPUT -eq '2' ]];
+then 
+echo -e "${CUSTOMTAB}You told her to stop crying and ask her if she's hiding something."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}She broke down and said she also had an affair too."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}You asked who, but she refused to tell you."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}You let her walk out the room. As she walked out the room, she said:
+\n${Cyan}${CUSTOMTAB}\"They're a lot closer than you think\"${NC}.\n\n\n\n\n\n"
+else
+echo -e "You didn't know what to ask her."
+fi
+else
+echo -e "You thanked her for the time and left.\n\n\n\n\n\n\n"
+fi
+elif [[ $INPUT -eq '2' ]];
+then
+echo -e "${CUSTOMTAB}You threaten her about the consequences she could face if she didn't tell the truth"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${CUSTOMTAB}It seems to unfaze her."
+echo -e "${CUSTOMTAB}She asked to leave the room, telling you that she has no affiliation with the murder."
+echo -e "${CUSTOMTAB}You let her leave the room, thinking of another way of approaching her."
+else
+echo -e "${CUSTOMTAB}You didn't know how to approach the interrogation"
+fi
+else
+echo -e "${CUSTOMTAB}You're not sure who to talk to."
+fi

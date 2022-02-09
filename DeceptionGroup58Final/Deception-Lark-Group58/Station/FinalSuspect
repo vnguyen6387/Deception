@@ -1,0 +1,128 @@
+#!/bin/bash
+clear
+CUSTOMENTERTAB='                                                                                                          ' 
+CUSTOMTITLETAB='							      	                                  '
+CUSTOMTAB=' 			       			      	                '
+NC='\033[m'
+Red='\033[0;31m'
+Cyan='\033[0;36m'
+Blue='\033[0;34m'
+echo -e "\n\n\n\n\n\n\n\n\n${CUSTOMTAB}Who is the final suspect?
+${CUSTOMTAB}[1] Walter Lee
+${CUSTOMTAB}[2] Luther Cordray
+${CUSTOMTAB}[3] Sami Park
+${CUSTOMTAB}[4] Lucas Issacs
+${CUSTOMTAB}[5] Mark Willington
+${CUSTOMTAB}[6] Nico Hargrove
+${CUSTOMTAB}[7] Detective Clay
+${CUSTOMTAB}[8] Haley Morris
+${CUSTOMTAB}[9] Amelia Hall
+${CUSTOMTAB}[Q] Go Back\n"
+read INPUT
+if [[ $INPUT -eq '7' ]];
+then
+echo -e "${CUSTOMTAB}You approached Detective Frederick."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue."
+read next
+echo -e "${CUSTOMTAB}${Cyan}What do you need?${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue."
+read next
+echo -e "${CUSTOMTAB}You told him about the case and he listened carefully."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${Cyan}${CUSTOMTAB}What was the presumed cause of death?${NC}
+${CUSTOMTAB}[1] Choking
+${CUSTOMTAB}[2] Blunt Force
+${CUSTOMTAB}[3] Gun Wound
+${CUSTOMTAB}[4] Stab Wound
+${CUSTOMTAB}[5] Drowned\n"
+		read INPUT
+		if [[ $INPUT -eq '2' ]];
+then
+echo -e "${Cyan}${CUSTOMTAB}What was the presumed murder weapon?${NC}
+${CUSTOMTAB}[1] Knife
+${CUSTOMTAB}[2] Gun
+${CUSTOMTAB}[3] Baseball Bat
+${CUSTOMTAB}[4] Oar
+${CUSTOMTAB}[5] Paddle\n"
+			read INPUT
+			if [[ $INPUT -eq '3' ]];
+then
+echo -e "${Cyan}${CUSTOMTAB}What was the color of the weapon?${NC}
+${CUSTOMTAB}[1] Blue
+${CUSTOMTAB}[2] Yellow
+${CUSTOMTAB}[3] Orange
+${CUSTOMTAB}[4] Green
+${CUSTOMTAB}[5] Pink\n"
+				read INPUT
+				if [[ $INPUT -eq '4' ]];
+then
+echo -e "${Cyan}${CUSTOMTAB}What was the ultimate cause of death?${NC}
+${CUSTOMTAB}[1] Choking
+${CUSTOMTAB}[2] Blunt Force
+${CUSTOMTAB}[3] Gun Wound
+${CUSTOMTAB}[4] Stab Wound
+${CUSTOMTAB}[5] Drowned\n"
+					read INPUT 
+					if [[ $INPUT -eq '1' ]];
+then
+echo -e "${CUSTOMTAB}He eyes widened."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "${Cyan}${CUSTOMTAB}\"He was seeing a girl, I remembered. It was that same girl you brought in for the interview."
+echo -e "${Cyan}${CUSTOMTAB}I can't believe he did it. It makes so much sense now.
+${CUSTOMTAB}Thank you so much for solving this. I'll take care of it.
+${CUSTOMTAB}You'll be replacing his job once this gets out.${NC}"
+
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n\n\n${CUSTOMTAB}After all of the evidence was collected, Detective Clay was charged for 1st degree murder.
+\n\n\n\n\n${CUSTOMTAB}You were promoted to a Senior Detective."
+
+
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+clear
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n${CUSTOMTITLETAB}Thanks for playing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+
+else
+clear
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n${CUSTOMTITLETAB}You failed to find the culprit. They got away."
+read next
+exit 
+fi
+
+else
+clear
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n${CUSTOMTITLETAB}You failed to find the culprit. They got away."
+read next
+exit 
+fi
+
+else
+clear
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n${CUSTOMTITLETAB}You failed to find the culprit. They got away."
+read next
+exit 
+fi
+
+else
+clear
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n${CUSTOMTITLETAB}You failed to find the culprit. They got away."
+read next
+exit 
+fi
+
+elif [[ $INPUT -eq 'Q' ]] || [[ $INPUT -eq 'q' ]];
+then
+echo -e "${CUSTOMTAB}You weren't ready."
+
+else
+clear
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n${CUSTOMTITLETAB}You failed to find the culprit. They got away."
+read next
+exit 
+fi
+
+
+

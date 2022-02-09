@@ -1,0 +1,88 @@
+#!/bin/sh
+clear
+CUSTOMENTERTAB='                                                                                                          ' 
+CUSTOMTITLETAB='							      	  '
+CUSTOMTAB='			       			      	       '
+NC='\033[m'
+Red='\033[0;31m'
+Cyan='\033[0;36m'
+Blue='\033[0;34m'
+echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"	
+echo "                                                                            	          _____                           _    _ "              
+echo "   										         |  __ \                         | |  (_)                "
+echo "   										         | |  | |  ___   ___  ___  _ __  | |_  _   ___   _ __    "
+echo "										         | |  | | / _ \ / __|/ _ \| '_ \ | __|| | / _ \ | '_ \   "
+echo "   								      	   	         | |__| ||  __/| (__|  __/| |_) || |_ | || (_) || | | |  "
+echo "  	                                                                      	         |_____/  \___| \___|\___|| .__/  \__||_| \___/ |_| |_|  "
+echo "                                                                                                	          | |                            "
+echo "  	  	                 	                                                                          |_|                            "                           
+echo -e "\n\n\n\n\n "
+echo "                                                                                                          [Enter] to continue"
+read next
+clear
+echo -e "\n\n\n\n\n\n${CUSTOMTAB}You are June Klagger. You are 29 and living in Reno, Nevada, your hometown. Since you were a kid, you always 
+                                                               wanted to become a detective. Following your father's footsteps you decided to pursue the same career as him. 
+                                                               The year is 2016, and you work at a police station in Reno, Nevada. You have been a Junior Detective for 
+                                                               roughly 6 years and want to be a Senior Detective some day. Having to just run errands and playing catch up
+                                                               with developing cases, is starting to get a bit old. You've helped solve so many cases, but you're overlooked 
+                                                               due to your job status. Being treated like you know nothing, when you know you have the capability to make a 
+                                                               difference in your community, is sickening to you. Crime rates have lowered in the past couple of weeks, so 
+                                                               you decided to try and solve a cold case when you go to the ${Blue}Station${NC} today.\n\n"
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read  next 
+
+echo -e "\n\n\n${CUSTOMTAB}You hear footsteps behind you\n\n"
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read  next 
+ 
+echo -e "\n\n\n${CUSTOMTAB}${Red}step step step${NC}\n\n"
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read  next 
+ 
+echo -e "                                                 \n\n${CUSTOMTAB}You see your boss walk up to you, Senior Detective Clay. A short, stocky man with a tempered demeanor. But" 
+echo -e                                                         "${CUSTOMTAB}he's a nice man once you get to know him. Your father worked with Clay before he passed away. Clay is a" 
+echo -e                                                         "${CUSTOMTAB}father figure to you. You know he just wants the best for you, but you're tired of being treated like a"
+echo -e                                                         "${CUSTOMTAB}child.\n\n" 
+echo -e "${CUSTOMENTERTAB}[Enter] to continue"
+read  next 
+
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"Did you forget my coffee?\"${NC}\n${CUSTOMTAB}[1] Yes\n${CUSTOMTAB}[2] No"
+tput cup 50 64
+read INPUT
+echo -e "${CUSTOMTAB}"
+if [[ $INPUT -eq '1' ]];
+then
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"If I act like an asshole today that's on you buddy.\n\n${CUSTOMTAB}What are you plans today?\"${NC}"
+elif [[ $INPUT -eq '2' ]];
+then
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"You shouldn't lie to your seniors kid.\n
+${CUSTOMTAB}What are your plans today?\"${NC}" 
+else 
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"You should've grabbed coffee for yourself kid, you're making no sense at all.\n
+${CUSTOMTAB}What are you plans today?\"${NC}" 
+fi
+
+echo -e  "\n\n\n${CUSTOMTAB}[1] Nothing\n${CUSTOMTAB}[2] I'm trying to solve some old case files since it's been a slow couple of weeks"
+tput cup 70 64
+read INPUT
+if [[ $INPUT -eq '1' ]];
+then 
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"Okay... I'll let you doing your thing. Whatever you're doing \"${NC}" 
+elif [[ $INPUT -eq '2' ]];
+then
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"Son, you shouldn't be wasting your time like this. But I guess it has been a pretty slow couple of weeks." 
+echo -e "${CUSTOMTAB}However, if you do end up trying to solve these cases, you have to use the old computer. It has all of the" 
+echo -e "${CUSTOMTAB}imporant files on there. It's one old piece of equipment though.\"${NC}" 
+else
+echo -e "\n\n\n${Cyan}${CUSTOMTAB}\"Are you hungover?\"${NC}" 
+fi
+
+echo -e "\n\n\n${CUSTOMTAB}The man walks into the ${Blue}Station${NC}."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read  next 
+echo -e "\n\n${CUSTOMTAB}To enter the station type \"cd Station\". If you want to go to a specific location or do a certain " 
+echo -e "${CUSTOMTAB}action, you can use the command \"cd\" followed with a \"[SPACE]\" and the \"${Blue}Location${NC}\"."
+echo -e "${CUSTOMTAB}Locations will be ${Blue}Blue${NC}. For example:\"cd${Blue} Location${NC}\""
+echo -e "${CUSTOMTAB}To talk to someone or perform an action, type \". followed by a [SPACE] then the name or action.\n${CUSTOMTAB}For example: \". PersonName/Action\"."
+echo -e "${CUSTOMTAB}If you want to see all of your locations, people, or actions, type \"ls\"."
+echo -e "${CUSTOMTAB}If you accidently go all the way back to the home directory, type \"cd Deception-Lark-Group58\"\n\n\n\n"

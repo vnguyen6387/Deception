@@ -1,0 +1,78 @@
+#!/bin/bash
+clear
+CUSTOMENTERTAB='                                                                                                          ' 
+CUSTOMTITLETAB='							      	  '
+CUSTOMTAB=' 			       			      	                '
+NC='\033[m'
+Red='\033[0;31m'
+Cyan='\033[0;36m'
+Blue='\033[0;34m'
+Green='\033[0;32m'
+echo -e "\n\n\n\n\n\n\n${CUSTOMTAB}You walk up to Amelia, she seems to be reading a book. She doesn't seem to notice you."
+echo -e "\n\n${CUSTOMTAB}You tapped on her desk"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"Sorry! How long were you waiting there for? What's up?\"${NC}\n\n\n${CUSTOMTAB}[1]How do I work that computer?\n${CUSTOMTAB}[2]Ask what she's reading.\n${CUSTOMTAB}[3]Leave"
+tput cup 22 73
+read INPUT
+if [[ $INPUT -eq '1' ]];
+then
+echo -e "\n\n${CUSTOMTAB}Her eyes lit up, it seems like she's happy someone is asking for her help."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"What do you want to know?\"${NC}\n\n\n${CUSTOMTAB}[1]How can I read files?\n${CUSTOMTAB}[2]How can I search for patterns in a file?\n${CUSTOMTAB}[3]How can I see where I'm at?\n${CUSTOMTAB}[4]Leave"
+tput cup 38 73
+read INPUT
+case $INPUT in 
+1)
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"That's easy, you have to use the command cat, followed by the filename. For example: \"cat (filename)\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You thanked her for her tip, she seems proud for helping someone."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"Let me know if you need anything else!\"${NC}\n\n\n";;
+2)
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"You would want to use the command grep, followed by the pattern or string,
+${CUSTOMTAB}if the pattern or string contains mutiple words, then you need it enclose it with
+${CUSTOMTAB}single or double quotation marks, then the filename.
+${CUSTOMTAB}For example, if you are looking an object in a file, you would want to type
+${CUSTOMTAB}\"grep ${Green}ObjectName${Cyan} FileName \"
+${CUSTOMTAB}Patterns are case-sensitive, so make sure to check your spelling!${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You thanked her for her tip, she seems proud for helping someone."
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"Let me know if you need anything else!\"${NC}\n\n\n";;
+3)
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"If you want to see where you are at, just use the command \"pwd\". This is mainly used for directories.
+${CUSTOMTAB}Your location will be on the left of the command line.\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"Let me know if you need anything else!\"${NC}\n\n\n";;
+4)
+echo -e "\n\n${CUSTOMTAB}You leave her to her studies\n\n\n\n\n\n\n";;
+*)
+echo -e "\n\n${CUSTOMTAB}You couldn't think of a question for her"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}She looks a bit sad.\n${Cyan}\n${CUSTOMTAB}\"Well, let me know if you need anything! I'll be here.\"\n\n\n\n\n${NC}"
+esac
+ 
+elif [[ $INPUT -eq '2' ]];
+then
+echo -e "\n\n${Cyan}${CUSTOMTAB}\"I'm just trying to learn a new programming language. Well, I guess not new, it's pretty old.\n${CUSTOMTAB}I'm trying to figure out how to use the old ${Blue}Computer${Cyan}.\"${NC}"
+echo -e "\n${CUSTOMENTERTAB}[Enter] to continue"
+read next
+echo -e "\n\n${CUSTOMTAB}You walk away, letting her focus on her studies.\n\n\n"
+
+elif [[ $INPUT -eq '3' ]];
+then
+echo "\n\n${CUSTOMTAB}You leave her to her studies"
+
+else
+echo -e "\n\n${CUSTOMTAB}You seem to not remember what you wanted to ask\n\n\n\n\n\n\n"
+fi
+
+
