@@ -3,10 +3,10 @@
 
 
 
-							      					                                                                              Welcome to LARK 
- the Linux Activity to Reinforce Knowledge
- Name of game: Deception 
- Developed by: Vincent Nguyen 
+Welcome to LARK 
+the Linux Activity to Reinforce Knowledge
+Name of game: Deception 
+Developed by: Vincent Nguyen 
  
 Narrative: You are Junior Detective June. There has been a murder in Reno, Nevada. The victim's name is Joseph Resa. 
 You must find the culprit and report it back to Senior Dectective Clay. There are different ways you can find the
